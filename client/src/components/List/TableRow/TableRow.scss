@@ -1,0 +1,22 @@
+@use "../../../vars";
+
+tr {
+    background: white;
+    overflow-wrap: break-word;
+
+    td {
+        padding: 1rem;
+        border: 1px solid grey;
+        font-size: 1rem;
+       &:first-child{
+        font-size: 1.3rem;
+       }
+       &:nth-child(2){
+        color: midnightblue;
+        font-weight: 500;
+       }
+       &:nth-child(3){
+        font-style: italic;
+       }
+    }
+}

@@ -1,0 +1,62 @@
+@use "../../vars";
+
+section{
+    flex: 4;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80vh;
+    border-radius: vars.$border-radius;
+    animation: comesLeft 0.5s ease-in-out;
+    box-shadow: vars.$box-shadow;
+    background-color: white;
+    @keyframes comesLeft {
+        0% {
+          transform: translateX(-1000px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        height: 300px;
+        table-layout:fixed;
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        tr {
+            th {
+                padding: 2rem 1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+
+       
+        }
+    
+    }
+        
+        
+        tbody{
+            width: 100%;
+            border-top: 3px solid vars.$color;
+        }
+    }
+
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: tomato;
+        background-color: white;
+    }
+}    

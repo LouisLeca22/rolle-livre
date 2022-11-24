@@ -1,0 +1,31 @@
+@use "../../vars";
+
+.container-single{
+    margin: 3% auto;
+    overflow: hidden;
+    width: 50vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: vars.$border-radius;
+    box-shadow: vars.$box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    position: relative;
+    padding: 1rem;
+    .actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        div{
+            width: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
+  
+}

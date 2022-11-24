@@ -1,0 +1,19 @@
+@use "../../vars";
+
+.group{
+    input{
+        color: vars.$color;
+        font-size: 1.3rem;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid midnightblue;
+        outline-color: midnightblue;
+    }
+
+    .active{
+        border: 2px solid midnightblue;
+        border-radius: 50%;
+        font-size: 4rem;
+        scale: 1.2;
+    }
+}

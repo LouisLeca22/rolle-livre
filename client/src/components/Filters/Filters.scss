@@ -1,0 +1,35 @@
+@use "../../vars";
+
+.side {
+    flex: 1;
+    border-radius: vars.$border-radius;
+    animation: comesRight 0.5s ease-in-out;
+    box-shadow: vars.$box-shadow;
+    background-color: white;
+    padding: 1rem;
+
+    @keyframes comesRight {
+        0% {
+            transform: translateX(1000px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    h1 {
+        text-align: center;
+        height: 10%;
+        color: vars.$color;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-around;
+    }
+}

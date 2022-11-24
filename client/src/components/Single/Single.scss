@@ -1,0 +1,41 @@
+@use "../../vars";
+article{
+    height: 70%;
+    width: 80%;
+    display: flex;
+
+
+    .left, .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid black;
+        border-radius: 2rem;
+ 
+    }
+
+    .group{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+ 
+        h3{
+            margin-bottom: .5rem;
+            color: #333;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        h1{
+            color: vars.$color;
+            font-size: 1.3rem;
+        }
+    }
+
+}

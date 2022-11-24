@@ -1,0 +1,28 @@
+@use "../../vars";
+
+.container-bookform{
+    margin: 4% auto;
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: vars.$border-radius;
+    box-shadow: vars.$box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+        color: vars.$color;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+
+    form{
+        height: 70%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
